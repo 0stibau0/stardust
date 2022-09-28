@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.firstQuestion,
+.secondQuestion{
+    min-height: 100vh;
+}
+
+.firstQuestion{
+    display: grid;
+}
+
+.secondQuestion{
+    display: none;
+
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr 1fr;
+    grid-template-areas: 
+        "h1 h1"
+        "h2 h3"
+        "img1 img2";
+        row-gap: 50%;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+h1{
+    grid-area: h1;
+}
+
+h2{
+    grid-area: h2;
+}
+
+h3{
+    grid-area: h3;
+}
